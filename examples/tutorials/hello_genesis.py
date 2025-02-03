@@ -12,7 +12,13 @@ franka = scene.add_entity(
     #     file='urdf/panda_bullet/panda.urdf',
     #     fixed=True,
     # ),
-    gs.morphs.MJCF(file="xml/franka_emika_panda/panda.xml"),
+    # gs.morphs.MJCF(file="xml/franka_emika_panda/panda.xml"),
+    gs.morphs.URDF(
+        file = 'avater/abb_gofa/abb_gofa.urdf',
+        fixed=True,
+        #'urdf/shadow_hand/shadow_hand.urdf',
+    )
+
 )
 
 scene.build()
