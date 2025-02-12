@@ -58,10 +58,10 @@ def parse_urdf(morph, surface):
         robot = urdfpy.URDF.load(path)
     else:
         robot = morph.file
-
+    # This merge messed up a lot of things. Hope can be modify
     # merge links connected by fixed joints
-    if hasattr(morph, "merge_fixed_links") and morph.merge_fixed_links:
-        robot = merge_fixed_links(robot, morph.links_to_keep)
+    # if hasattr(morph, "merge_fixed_links") and morph.merge_fixed_links:
+    #     robot = merge_fixed_links(robot, morph.links_to_keep)
 
     link_name_to_idx = dict()
     for idx, link in enumerate(robot.links):
@@ -405,6 +405,9 @@ def merge_fixed_links(robot, links_to_keep):
             joint.parent = original_to_merged[joint.parent]
         if joint.child in original_to_merged:
             joint.child = original_to_merged[joint.child]
+
+    print("Remaining links after merge:", [link.name for link in links])
+    print("Original to merged mapping:", original_to_merged)
 
     return urdfpy.URDF(robot.name, links=links, joints=joints, materials=robot.materials)
 

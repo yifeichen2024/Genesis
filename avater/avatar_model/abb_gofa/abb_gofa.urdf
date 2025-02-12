@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<robot name="abb_gofa">
+  <!-- Included common materials -->
+  <material name="abb_yellow">
+    <!-- Define the material properties here if needed -->
+    <color rgba="1.0 0.8 0.0 1.0"/>
+  </material>
+
+  <!-- Link: base -->
+  <link name="base">
+    <inertial>
+      <mass value="3.50083457958494"/>
+      <origin xyz="-0.0012013793465437 -0.000175191786981708 0.0862146007385352"/>
+      <inertia ixx="0.0153015257917955" ixy="-6.40155032892694E-05" ixz="-0.000276708687772683" iyy="0.0159333503953857" iyz="-3.98029144780725E-05" izz="0.0112162302268266"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/base.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/base.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Link: link_1 -->
+  <link name="link_1">
+    <inertial>
+      <mass value="2.76743491139404"/>
+      <origin xyz="2.08682453325091E-06 0.0103608399967513 0.0705307203199506"/>
+      <inertia ixx="0.0115158625894577" ixy="6.37197693598838E-08" ixz="5.98954393680154E-09" iyy="0.006494848329231" iyz="-0.000196668400316843" izz="0.0109446835358581"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/link_1.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/link_1.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Link: link_2 -->
+  <link name="link_2">
+    <inertial>
+      <mass value="4.2890416"/>
+      <origin xyz="1.34018352211628E-06 -0.0500118376116071 0.222001399322246"/>
+      <inertia ixx="0.130524729873898" ixy="1.31811857134115E-07" ixz="1.99022457670482E-06" iyy="0.133278449324229" iyz="-4.48622200366709E-07" izz="0.00669457974697178"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/link_2.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/link_2.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Link: link_3 -->
+  <link name="link_3">
+    <inertial>
+      <mass value="3.38333107992875"/>
+      <origin xyz="0.0128129281453599 0.0944171780907046 0.0247427540642403"/>
+      <inertia ixx="0.0175626138728642" ixy="0.000364866179108744" ixz="-0.00318670290285352" iyy="0.0140230068919562" iyz="0.000704668055158407" izz="0.013275205067567"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/link_3.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/link_3.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Link: link_4 -->
+  <link name="link_4">
+    <inertial>
+      <mass value="2.77857535641324"/>
+      <origin xyz="0.160558561602322 0.041976811408979 -2.36623354021859E-07"/>
+      <inertia ixx="0.00881683095901354" ixy="-0.010746260580237" ixz="1.2899930119841E-07" iyy="0.0340754175571832" iyz="3.96362791626429E-08" izz="0.0389358932156922"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/link_4.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/link_4.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Link: link_5 -->
+  <link name="link_5">
+    <inertial>
+      <mass value="3.01105814739001"/>
+      <origin xyz="-0.0147152361879962 -0.0785646469392633 0.0427558021601431"/>
+      <inertia ixx="0.0114597336686444" ixy="0.000180094704361231" ixz="0.00165207280226761" iyy="0.013561904467501" iyz="-0.000525272443978826" izz="0.0108480119549914"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/link_5.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/link_5.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Link: link_6 -->
+  <link name="link_6">
+    <inertial>
+      <mass value="0.146500988015653"/>
+      <origin xyz="0.0137506852604966 0.000239804131398652 -0.000341962798940165" rpy="0 0 0"/>
+      <inertia ixx="0.000128977630055306" ixy="-8.7622752508613E-08" ixz="1.18851551870012E-07" iyy="7.61118177829087E-05" iyz="-6.49821554399679E-07" izz="7.65022909768016E-05"/>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/collision/link_6.STL"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh filename="/home/chen/Rob/Drake_simulation/avater_drake/urdf/abb_gofa/meshes/visual/link_6.STL"/>
+      </geometry>
+      <material name="abb_yellow"/>
+    </visual>
+  </link>
+
+  <!-- Joint: joint_1 -->
+  <joint type="revolute" name="joint_1">
+    <origin xyz="0 0 0.1875" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="base"/>
+    <child link="link_1"/>
+    <limit effort="1000" lower="-2.967" upper="2.967" velocity="5.027"/>
+    <dynamics damping="50.0" friction="1.0"/>
+  </joint>
+
+  <!-- Joint: joint_2 -->
+  <joint type="revolute" name="joint_2">
+    <origin xyz="0 -0.085 0.0775" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <limit effort="1000" lower="-1.745" upper="2.269" velocity="4.189"/>
+    <dynamics damping="50.0" friction="1.0"/>
+  </joint>
+
+  <!-- Joint: joint_3 -->
+  <joint type="revolute" name="joint_3">
+    <origin xyz="0 -0.00100000000000007 0.444" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <limit effort="1000" lower="-3.491" upper="1.222" velocity="5.236"/>
+    <dynamics damping="10.0" friction="1.0"/>
+  </joint>
+
+  <!-- Joint: joint_4 -->
+  <joint type="revolute" name="joint_4">
+    <origin xyz="0.096 0.0860000000000001 0.11" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <limit effort="1000" lower="-4.712" upper="4.712" velocity="6.981"/>
+    <dynamics damping="5.0" friction="1.0"/>
+  </joint>
+
+  <!-- Joint: joint_5 -->
+  <joint type="revolute" name="joint_5">
+    <origin xyz="0.374 0.0744999999999998 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <limit effort="1000" lower="-2.269" upper="2.269" velocity="7.069"/>
+    <dynamics damping="2.0" friction="1.0"/>
+  </joint>
+
+  <!-- Joint: joint_6 -->
+  <joint type="revolute" name="joint_6">
+    <origin xyz="0.0679999999999995 -0.0744999999999998 0.0800000000000003" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <limit effort="1000" lower="-6.283" upper="6.283" velocity="10.472"/>
+    <dynamics damping="1.0" friction="1.0"/>
+  </joint>
+
+  <!-- ROS-Industrial 'base' frame -->
+  <link name="base_link"/>
+  <joint name="base_link-base" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="base"/>
+  </joint>
+
+  <!-- ROS-Industrial 'tool0' frame -->
+  <link name="tool0"/>
+  <joint name="link_6-tool0" type="fixed">
+    <origin xyz="0.0326 0 0" rpy="0 1.5708 0"/>
+    <parent link="link_6"/>
+    <child link="tool0"/>
+  </joint>
+</robot>

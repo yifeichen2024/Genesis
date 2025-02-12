@@ -1,0 +1,12 @@
+done, forearm/forearm_E3M5_from_dae.obj 
+done, forearm/forearm_collision_E3M5_from_dae.obj
+done, may need scale 0.001, wrist/wrist_E3M5_from_dae_scaled_n0.001_0.001_0.001.obj
+done, may need scale 0.001, palm/palm_E3M5_from_dae_scaled_n0.001_0.001_0.001.obj
+done, f_knuckle/f_knuckle_E3M5_from_dae.obj
+done, f_proximal/f_proximal_E3M5_from_dae.obj
+done, f_middle/f_middle_E3M5_from_dae.obj
+done, f_distal/bt_sp/f_distal_bt_sp_from_dae.obj
+done, may need scale 0.001, lf_metacarpal/lf_metacarpal_E3M5_from_dae_scaled_n0.001_0.001_0.001.obj
+done,th_proximal/th_proximal_E3M5_from_dae.obj
+done,th_middle/th_middle_E3M5_from_dae.obj
+done,th_distal/bt_sp/th_distal_bt_sp_from_dae.obj
