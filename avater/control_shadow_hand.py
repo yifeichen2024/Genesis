@@ -26,6 +26,8 @@ shadow_hand = scene.add_entity(
         file = 'urdf/shadow_hand/shadow_hand.urdf',
     )
 )
+# Try addin the force field to the plane.
+shadow_hand_force = scene.add_force_field()
 
 cam = scene.add_camera(
     res=(640, 480),
@@ -156,7 +158,7 @@ for i in range(1250):
     # 打印控制力和实际力
     print("control force:", shadow_hand.get_dofs_control_force(dofs_idx))
     print("internal force:", shadow_hand.get_dofs_force(dofs_idx))
-
+    print(shadow_hand_force)
     scene.step()
     cam.render()
 
